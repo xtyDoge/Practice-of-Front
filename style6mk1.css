@@ -1,0 +1,254 @@
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+body {
+	font-family: "Microsoft YaHei";
+	background: #44565C;
+	color: #767777;
+	font-size: 12px;
+}
+
+.container {
+	width: 892px;
+	height: 1386px;
+	background: #fff;
+	margin: 0 auto;
+	padding: 0 44px;
+}
+
+header {
+	position: relative;
+	border-bottom: 2px solid #938e8c;
+}
+
+.ife {
+	position: relative;
+	width: 110px;
+	height: 61px;
+	background: #db3e75;
+}
+
+header p {
+	position: absolute;
+	bottom: 0px;
+	right: 0px;
+	color: #cc8091;
+}
+
+.ife_url {
+	position: absolute;
+	bottom: 0px;
+	color: #ffffff;
+	font-family: "SimHei";
+	font-size: 12px;
+	text-decoration: none;
+}
+
+.article-top {
+	margin-top: 40px;
+	position: relative;
+}
+
+
+.com_top {
+	position: relative;
+	width: 641px;
+	height: 301px;
+}
+
+.left {
+	position: absolute;
+	width: 191px;
+	height: 301px;
+	left: 0px;
+	top: 0px;
+	background-color: green;
+	opacity: 0.5;
+}
+
+.right {
+	position: absolute;
+	width: 191px;
+	height: 301px;
+	left: 450px;
+	top: 0px;
+	background-color: red;
+	opacity: 0.5;
+}
+
+.char_top {
+	position: absolute;
+	right: 0px;
+	top: 0px;
+	height: 301px;
+	width: 203px;
+	border-top: 2px solid #cc8091;
+}
+
+.char_top h3 {
+	font-size: 20px;
+	color: #000000;
+	font-family: "Microsoft YaHei";
+	text-decoration: underline;
+}
+
+.char_top h3 span {
+	font-size: 24px;
+	vertical-align: bottom;
+}
+
+.char_top>p {
+	margin-bottom: 10px;
+	font-size: 12px;
+	color: #676767;
+	font-family: "STKaiti";
+} 
+
+.char_top .mk1 {
+	font-size: 116px;
+	font-family: "Microsoft YaHei";
+	color: #75b86b;
+	text-align: left;
+	clear: both;
+	position: relative;
+	left: -13px;
+}
+
+.char_top .mk2 {              /* 3.2 */
+	position: absolute;
+	bottom: -20px;
+	left: 0px;
+	font-size: 55px;
+	color: #cc8091;
+	font-family: "Microsoft YaHei";
+}
+
+.char_top .mk3 {             /* css */
+	position: absolute;
+	right: 78px;
+	bottom: 12px;
+	font-size: 21px;
+	color: #cc8091;
+	font-family: "Microsoft YaHei";
+	margin:0px;
+}
+
+.char_top .mk4 {				/* cssssscss */
+	position: absolute;
+	font-size: 12px;
+	right: 20px;
+	bottom: 0px;
+	color: #cc8091;
+	font-family: "Microsoft YaHei";
+	margin: 0px;
+}
+
+.article-mid {
+	margin-top: 40px;
+	width: 892px;
+}
+
+.article-mid div{
+	margin-right: 30px;
+	width: 228px;
+	float: left;
+}
+
+.article-mid .what p{
+	font-family:"SimSun";
+}
+
+.article-mid .when p{
+	font-family: "Microsoft YaHei";
+	opacity: 0.7;
+}
+
+.article-mid .how p{
+	opacity: 0.7;
+	font-family: "Microsoft YaHei";
+	color: #231815;
+}
+
+.article-mid .how h3{
+	opacity: 0.7;
+	font-size: 12px;
+	color: #231815;
+	margin-top:9px ;
+}
+
+.article-mid .how h3 i{
+	color: #cd4a48;
+}
+
+.article-mid b{
+	font-family: "Microsoft YaHei";
+	font-size: 16px;
+	text-decoration: underline;
+}
+
+.article-mid .what>b{
+	color: #418c59;
+}
+
+.article-mid .when>b{
+	color: #d2994f;
+}
+
+.article-mid .how>b{
+	color: #cc7680;
+}
+
+.article-mid p{
+	margin-top: 12px;
+	font-size: 12px;
+}
+
+.article-btm {
+	float: left;
+	margin-top: 40px;
+	width: 892px;
+	background-color: #cccccc;
+}
+
+.title{
+	width: 415px;
+	border-bottom:2px #11456b solid;
+}
+
+.title h1{
+	font: bold 42px "SimHei" ;
+	color: #11456b;
+	margin-bottom: 12px;
+	line-height: 1;
+
+}
+
+.title h1 i{
+	font-size: 72px;
+	color: #f5e327;
+}
+
+.title h2 {
+	font-size: 33px;
+	color: #11456b;
+	font-weight: bold;
+	font-family: "SimHei";
+	margin: 16px;
+	margin-left: 0px;
+}
+
+.passage{
+	width: 415px;
+	background-color: #cccccc;
+	margin: 16px;
+	margin-left: 0px;
+}
+
+.passage {
+
+}
+
+
+
