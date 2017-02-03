@@ -1,0 +1,19 @@
+#display_area {
+	height: 420px;
+	position: relative;	
+	background: #cccccc;
+	opacity: 0.6;
+}
+
+#display_area div {
+	margin-right: 10px;
+	background: red;
+	bottom: 0px;
+	width: 30px;
+	position: absolute;
+	text-align: center;
+	color: white;
+}
+
+/* 实际上 只需要动态标定每一个div元素的height和left */
+/* left第一个为20px 其余每一个加40px*/
