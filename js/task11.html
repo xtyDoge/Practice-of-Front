@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Js二叉树</title>
+	<style>
+		body {
+			min-width: 2050px;
+		}
+
+		.root {
+			display: flex;
+			margin: 10px;
+ 			/* width: 1000px;
+ 			height: 300px; */
+			border: 1px solid #000;
+			margin: 100px auto;
+			margin-bottom: 10px;
+			justify-content: flex-start;
+		}
+		.child_1 {
+			display: flex;
+			margin: 20px;
+			/* width: 450px;
+			height: 260px; */
+			border: 1px solid red;
+			justify-content: flex-start;
+		}
+		.child_2 {
+			display: flex;
+			margin: 20px;
+		/* 	width: 170px; 
+			height: 220px; */
+			border: 1px solid green;
+			justify-content: flex-start;
+		}
+		.child_3 {
+			display: flex;
+			margin: 20px;
+			padding: 10px;
+			/* width: 35px; 
+			height: 180px; */
+			border: 1px solid blue;
+			justify-content: flex-start;
+		}
+		.child_4{
+			display: flex;
+			margin: 20px;
+			/* width: 10px;  */
+/* 			height: 180px; 
+ */			border: 1px solid grey;
+		}
+		input {
+			margin-left: 100px;
+			width: 50px;
+			height: 40px;
+			font-size: 15px;
+			border-radius: 8px;
+			border-left: solid 2px #33ccff;
+		}
+	</style>
+</head>
+<body>
+	<div class="root">Super
+
+		<div class="child_1">Cat
+			<div class="child_2">Apple
+				<div class="child_3">Pear</div>
+				<div class="child_3">Pig</div>
+				<div class="child_3">Cola</div>
+				<div class="child_3">Soccer</div>
+			</div>
+			<div class="child_2">Phone
+				<div class="child_3"></div>
+				<div class="child_3"></div>
+			</div>
+			<div class="child_2">
+				<div class="child_3">Book</div>
+				<div class="child_3">School</div>
+			</div>
+				
+			</div>
+
+			<div class="child_1">Note
+			<div class="child_2">Human
+				<div class="child_3">Code</div>
+				<div class="child_3">Operate</div>
+				<div class="child_3">Man</div>
+			</div>
+			<div class="child_2">Program
+				<div class="child_3">Bement
+					<div class="child_4">Cat</div>
+				</div>
+				<div class="child_3">Grass</div>
+			</div>
+		</div>
+		<div class="child_1">
+				Fish
+			</div>
+		</div>
+
+	<input type="button" value="前序">
+	<input type="button" value="后序">
+	<input type="text" id="search">
+	<input type="button" value="查询">
+<script type="text/javascript" src="task11.js"></script>
+</body>
+</html>
