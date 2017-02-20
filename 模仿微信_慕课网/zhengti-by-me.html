@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>微信布局</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no" charset="utf-8">
+	<style type="text/css">
+		body {font-size: 14px;font-family: "Microsoft YaHei";}
+
+		/* 顶部 文字和图标定位*/
+		.constr {position: absolute;left: 0px;right: 0px;top: 0px;bottom: 0px;background: #ccc;display: block;}
+		.constr .header {height: 48px;background-color: #21292B;text-align: center;line-height: 48px;color: #fff;font-size: 20px;padding-left: 96px;}
+		.header > a {display: inline-block;height: 48px;float:right;width: 48px;background: url(http://img.mukewang.com/547d339b000188bb00960288.png) no-repeat;overflow: hidden;background-size: 48px 144px;}
+		.header > .search-btn {background-position: 0 -48px;right: 20px;}
+
+		/* 底部  难点在于图标 文字 的定位 用absolute实现自适应*/
+		.footer {position: absolute;left: 0px;right: 0px;bottom:0px;height: 52px;background-color: #fcfcfc;border-top: 1px solid #dfdfdf;}
+		.footer > a {margin-top: 0px;margin-bottom: 0px;height: 100%;width: 25%;position: relative;float: left;}
+		.footer > a:before{
+			content: "";
+			position: absolute;left: 0px;right: 0px;top: 0px;bottom: 0px;
+            /*border-right: 1px solid #dfdfdf; */
+		}
+		.footer > a{text-decoration: none;color: #999;font-size: 14px;text-align: center;}
+		.footer > a > i{width: 35px;margin:auto;display: block;height: 35px;margin-bottom: -3px; background: url(http://img.mukewang.com/547d33970001444d00700560.png) no-repeat;background-size: 35px 280px;}
+		.footer > a .icon-message {background-position:0px -35px;}
+		.footer > a .icon-contact {background-position: 0px -70px;}
+		.footer > a .icon-moment {background-position: 0px -140px;}
+		.footer > a .icon-me {background-position: 0px -210px;}
+
+
+		/* 中部 列表 */
+		.content {position: absolute;left: 0px;right: 0px;background: #ebebeb;display: block;top: 48px;bottom: 53px;overflow: auto;}
+		.content a{display: block;width: 100%;height: 64px;background-color:#fff ;float: left;border-bottom: 1px solid #dfdfdf;box-sizing: border-box;padding:8px 12px;}
+		.content a img {height:48px ;width: 48px;float: left;}
+		.content a .cell {padding-left: 58px;line-height: 24px;color: #333;height: 48px;}
+		.content a .cell .title-time {display: block;float: left;width: 100%;}
+		.content a .cell .title-time h5 {margin: 0;font-weight: 400;font-size: 100%;float: left;}
+		.content a .cell .title-time time {float: right;font-size: 12px;color: #b9b9b9;}
+		.content a .cell p {display: block;width: 100%;float: left;margin: 0;font-size: 14px;color: #a8a8a8;overflow: hidden;white-space: nowrap;text-overflow: ellipsis;margin-right: 20px;}/* nowrap = 不换行  ellipsis = 省略号代表溢出文本*/
+
+
+	</style>
+</head>
+
+<body>
+	<div class="constr">
+		<div class="header">
+			微信
+			<a href="#" class="search-btn"><i></i></a>
+			<a href="#" class="add-btn"><i></i></a>
+		</div>
+		<div class="content">
+			<a class="list" href="#">
+				<img src="img/WX20170219-213221@2x.png">
+				<div class="cell">
+					<div class="title-time">
+						<h5>天天天天天啊</h5>
+						<time>星期六</time>
+					</div>
+					<p>你好，明天到我家玩吧，我请客，爱来不来，不来算了，到底来不来啊，不来火力上来了</p>					
+				</div>
+
+			</a>
+
+			<a class="list" href="#">
+				<img src="img/WX20170219-213410@2x.png">
+				<div class="cell">
+					<div class="title-time">
+						<h5>萌萌萌萌萌哒</h5>
+						<time>19:48</time>
+					</div>
+					<p>不来了，改天吧，今天有事</p>					
+				</div>
+
+			</a>
+
+			<a class="list" href="#">
+				<img src="img/WX20170219-213432@2x.png">
+				<div class="cell">
+					<div class="title-time">
+						<h5>公众号</h5>
+						<time>昨天</time>
+					</div>
+					<p>广告位招租</p>					
+				</div>
+
+			</a>
+
+			<a class="list" href="#">
+				<img src="img/WX20170219-213432@2x.png">
+				<div class="cell">
+					<div class="title-time">
+						<h5>公众号</h5>
+						<time>昨天</time>
+					</div>
+					<p>广告位招租</p>					
+				</div>
+
+			</a>
+
+			<a class="list" href="#">
+				<img src="img/WX20170219-213432@2x.png">
+				<div class="cell">
+					<div class="title-time">
+						<h5>公众号</h5>
+						<time>昨天</time>
+					</div>
+					<p>广告位招租</p>					
+				</div>
+
+			</a>
+
+			<a class="list" href="#">
+				<img src="img/WX20170219-213432@2x.png">
+				<div class="cell">
+					<div class="title-time">
+						<h5>公众号</h5>
+						<time>昨天</time>
+					</div>
+					<p>广告位招租</p>					
+				</div>
+
+			</a>
+
+			<a class="list" href="#">
+				<img src="img/WX20170219-213432@2x.png">
+				<div class="cell">
+					<div class="title-time">
+						<h5>公众号</h5>
+						<time>昨天</time>
+					</div>
+					<p>广告位招租</p>					
+				</div>
+
+			</a>
+
+			<a class="list" href="#">
+				<img src="img/WX20170219-213432@2x.png">
+				<div class="cell">
+					<div class="title-time">
+						<h5>公众号</h5>
+						<time>昨天</time>
+					</div>
+					<p>广告位招租</p>					
+				</div>
+
+			</a>
+
+			<a class="list" href="#">
+				<img src="img/WX20170219-213432@2x.png">
+				<div class="cell">
+					<div class="title-time">
+						<h5>公众号</h5>
+						<time>昨天</time>
+					</div>
+					<p>广告位招租</p>					
+				</div>
+
+			</a>
+
+		</div>
+		<div class="footer">
+			<a href="#" class="message-btn"><i class="icon-message"></i>微信</a>
+			<a class="contact-btn" href="#"><i class="icon-contact"></i>通讯录</a>
+			<a class="moment-btn" href="#"><i class="icon-moment"></i>发现</a>
+			<a class="me-btn" href="#"><i class="icon-me"></i>我</a>
+		</div>
+	</div>
+</body>
+</html>

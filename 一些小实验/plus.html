@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>加号</title>
+	<meta charset="utf-8">
+	<style type="text/css">
+		body {position: absolute;left: 0px;right: 0px;top: 0px;bottom: 0px;background-color: #ccc;}
+		.plus {position: absolute;margin-left: 10px;margin-top: 10px;border: 1px solid #fff;height: 70px;width: 100px;}
+		.menu {position: absolute;right: 10px;bottom: 10px;border: 1px solid #fff;height: 50px;width: 50px;}
+		.plus:before {
+			content: "";
+			position: absolute;left: 10%;right: 10%;top: 10%;bottom: 45%;
+			border-top: 10px solid #fff;
+			border-bottom: 10px solid #fff;
+			overflow: hidden;
+		}
+		.plus:after {
+			content: "";
+			position: absolute;left: 10%;right: 10%;top: 0;bottom: 10%;
+			border-bottom: 10px solid #fff;
+			overflow: hidden;
+		}
+
+		.menu:before {
+			content: "";
+			position: absolute;left: 0px;right: 45%;top: 10%;bottom: 10%;
+			border-right: 10px solid #fff;
+			overflow: hidden;
+		}
+
+		.menu:after {
+			content: "";
+			position: absolute;left: 10%;right: 10%;top: 0%;bottom: 45%;
+			border-bottom: 10px solid #fff;
+			overflow: hidden;
+		}
+	</style>
+</head>
+<body>
+	<div class="plus">
+		
+	</div>
+
+	<div class="menu">
+		
+	</div>
+
+</body>
+</html>

@@ -1,0 +1,45 @@
+#inputbox {
+	margin: 0 auto;
+}
+
+table {
+	margin: 50px auto;
+}
+
+td:first-child {
+	font-size:24px ;
+	font-family: "Microsoft YaHei";
+	padding-right:20px;
+}
+
+td:nth-child(2){
+	font-size: 24px;
+	color: lightgray;
+	font-family: "Kaiti";
+	padding-bottom: 10px;
+
+}
+
+td:nth-child(2) input {
+	width: 200px;
+	height: 28px;
+	border-radius: 4px;
+	border: 1px solid lightgrey;
+}
+
+td:nth-child(3) {
+	
+}
+
+td:nth-child(3) button {
+	color: white;
+	background-color: blue;
+	height: 35px;
+	width: 60px;
+	border-radius: 7px;
+	border: 0px;
+}
+
+td:nth-child(3) button:hover {
+	background-color: lightblue;
+}

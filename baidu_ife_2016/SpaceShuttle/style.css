@@ -1,0 +1,85 @@
+.dash {
+    height: 700px;
+    width: 1000px;
+    border: 1px solid lightsteelblue;
+    margin: 30px;
+    font-family: "Microsoft YaHei";
+    font-size: 20px;
+    color: indianred;
+}
+
+.dash div {
+    margin: 20px;
+    padding: 20px;
+    width: 400px;
+    height:250px;
+    border: 2px lightcoral solid;
+    float: left;
+    color: black;
+
+}
+
+div span {
+    background: #fccd1f;
+    border: solid 1px lightgray;
+}
+
+div span:hover {
+    background-color: #33bcff;
+}
+
+div tr:nth-child(2) td:nth-child(2) div{
+    height: 0px;
+    width: 100px;
+    border: 1px lightgray solid;
+    background: lightgreen;
+    border-radius: 5px;
+}
+
+div tr:nth-child(4) td{
+    padding-top: 20px;
+}
+
+button{
+  background: #333;
+  text-align: center;
+  width: 60px;
+  padding: 20px 10px;
+  text-decoration: none;
+  color: white;
+  font-size: 12px;
+}
+
+button:hover{
+  border-bottom: 1px solid red;
+    background: #474747;
+  border-radius: 3px;
+}
+
+#console span {
+    color: white;
+    background: blue;
+    opacity: 0.5;
+}
+
+#console span:hover {
+
+    background: black;
+    opacity: 1;
+}
+
+#console div {
+    border: 10px solid gray;
+    text-align: center;
+    background: black;
+    height: 50px;
+    width: 300px;
+    padding-right: 20px;
+    color: lightgreen;
+    border-radius: 10px;
+}
+
+#console div code {
+    margin: 0 auto;
+    font-size: 16px;
+}
