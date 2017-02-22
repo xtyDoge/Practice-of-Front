@@ -1,0 +1,886 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"padd",
+				"padding"
+			],
+			[
+				"box",
+				"box-sizing"
+			],
+			[
+				"borderr",
+				"border-radius"
+			],
+			[
+				"tex",
+				"text"
+			],
+			[
+				"bakgo",
+				"background"
+			],
+			[
+				"margi",
+				"margin"
+			],
+			[
+				"di",
+				"display"
+			],
+			[
+				"ti",
+				"title-time"
+			],
+			[
+				"borders",
+				"border-style"
+			],
+			[
+				"d",
+				"display"
+			],
+			[
+				"ic",
+				"icon-moment"
+			],
+			[
+				"i",
+				"icon-me"
+			],
+			[
+				"margin",
+				"margin-bottom"
+			],
+			[
+				"backgr",
+				"background"
+			],
+			[
+				"head",
+				"header"
+			],
+			[
+				"wd",
+				"width"
+			],
+			[
+				"backg",
+				"background"
+			],
+			[
+				"ani",
+				"animate"
+			],
+			[
+				"wi",
+				"width\tStyle CSS"
+			],
+			[
+				"st",
+				"style\tStyle CSS"
+			],
+			[
+				"lauch",
+				"launchbtn"
+			],
+			[
+				"stop",
+				"stopbtn"
+			],
+			[
+				"laun",
+				"launch"
+			],
+			[
+				"power",
+				"power"
+			],
+			[
+				"dynamic",
+				"dynamicManager"
+			],
+			[
+				"dynam",
+				"dynamicManager"
+			],
+			[
+				"Media",
+				"Mediator"
+			],
+			[
+				"DEFA",
+				"DEFAULT_CHARGE_RATE"
+			],
+			[
+				"time",
+				"timer"
+			],
+			[
+				"lig",
+				"lightcoral"
+			],
+			[
+				"red",
+				"indianred"
+			],
+			[
+				"light",
+				"lightcyan"
+			],
+			[
+				"disp",
+				"displayAdaptor"
+			],
+			[
+				"lightg",
+				"lightgray"
+			],
+			[
+				"backgroundc",
+				"background-color"
+			],
+			[
+				"fl",
+				"float"
+			],
+			[
+				"name",
+				"namein"
+			],
+			[
+				"SPA",
+				"SPACESHIP_SPEED"
+			],
+			[
+				"proto",
+				"prototype"
+			],
+			[
+				"sear",
+				"searchNode"
+			],
+			[
+				"min",
+				"min-width"
+			],
+			[
+				"border",
+				"border"
+			],
+			[
+				"ch",
+				"child_4"
+			],
+			[
+				"cl",
+				"child_3"
+			],
+			[
+				"child",
+				"child_2"
+			],
+			[
+				"sor",
+				"sortDigitArray"
+			],
+			[
+				"cli",
+				"click"
+			],
+			[
+				"addEventListener",
+				"addEventListener( listener: EventListener ): any\tNativeScript - Module trace"
+			],
+			[
+				"digi",
+				"digitArray"
+			],
+			[
+				"digit",
+				"digitInput"
+			],
+			[
+				"ale",
+				"alert"
+			],
+			[
+				"digiti",
+				"digitIn"
+			],
+			[
+				"aler",
+				"alert(\"您刚刚输入了"
+			],
+			[
+				"digitin",
+				"digitInput"
+			],
+			[
+				"display",
+				"display_area"
+			],
+			[
+				"line",
+				"line-height"
+			],
+			[
+				"artic",
+				"article\tTag"
+			],
+			[
+				"marg",
+				"margin"
+			],
+			[
+				"article",
+				"article-mid"
+			],
+			[
+				"text",
+				"text-align"
+			],
+			[
+				"hea",
+				"header\tTag"
+			],
+			[
+				"add",
+				"addAqiData"
+			],
+			[
+				"aqi",
+				"aqiData"
+			],
+			[
+				"isor",
+				"isSorted"
+			],
+			[
+				"for",
+				"for\tfor (…) {…} (Improved Native For-Loop)"
+			],
+			[
+				"sort",
+				"sort( compareFn?: function ): numberstring\tNativeScript - TemplateStringsArray"
+			],
+			[
+				"soure",
+				"source"
+			],
+			[
+				"fol",
+				"float"
+			],
+			[
+				"fon",
+				"font-family"
+			],
+			[
+				"hear",
+				"headercol"
+			],
+			[
+				"font",
+				"font-family"
+			],
+			[
+				"wht",
+				"white"
+			],
+			[
+				"backr",
+				"background"
+			],
+			[
+				"h",
+				"html\thtml"
+			],
+			[
+				"wid",
+				"width"
+			],
+			[
+				"list",
+				"list-style-type"
+			],
+			[
+				"w",
+				"width"
+			],
+			[
+				"he",
+				"header\tTag"
+			],
+			[
+				"bor",
+				"border-width"
+			],
+			[
+				"magin",
+				"margin-bottom"
+			],
+			[
+				"file",
+				"filePath"
+			],
+			[
+				"char",
+				"charEncoding"
+			],
+			[
+				"fileP",
+				"filePath"
+			],
+			[
+				"if",
+				"if\tIf Condition"
+			],
+			[
+				"class",
+				"classmate"
+			],
+			[
+				"cla",
+				"classmate"
+			],
+			[
+				"l",
+				"link\tTag"
+			],
+			[
+				"http",
+				"https"
+			],
+			[
+				"bl",
+				"bold"
+			],
+			[
+				"li",
+				"li\tTag"
+			],
+			[
+				"geitElement",
+				"getElementById( elementId: DOMString ): Element\tDocument"
+			],
+			[
+				"pr",
+				"prototype"
+			],
+			[
+				"Pi",
+				"PI: number\tNativeScript - Math"
+			],
+			[
+				"get",
+				"get(): any\tNativeScript - PropertyDescriptor"
+			],
+			[
+				"s",
+				"Step"
+			],
+			[
+				"r",
+				"return"
+			],
+			[
+				"thr",
+				"threading"
+			],
+			[
+				"c",
+				"current_thread"
+			],
+			[
+				"thre",
+				"threading"
+			],
+			[
+				"th",
+				"threading"
+			],
+			[
+				"__",
+				"__\t__magic__"
+			],
+			[
+				"wri",
+				"writeToFile"
+			],
+			[
+				"re",
+				"result"
+			],
+			[
+				"bu",
+				"bullet1"
+			],
+			[
+				"b",
+				"bullet"
+			],
+			[
+				"gun",
+				"gun"
+			],
+			[
+				"x",
+				"__xpos"
+			],
+			[
+				"ypos",
+				"__ypos"
+			],
+			[
+				"set",
+				"setTimeInterval"
+			],
+			[
+				"_",
+				"__ypos"
+			],
+			[
+				"f",
+				"fd"
+			],
+			[
+				"url",
+				"urllib2"
+			],
+			[
+				"na",
+				"namedict"
+			],
+			[
+				"va",
+				"val"
+			],
+			[
+				"v",
+				"value"
+			],
+			[
+				"k",
+				"Kay"
+			],
+			[
+				"p",
+				"power"
+			],
+			[
+				"F",
+				"function"
+			],
+			[
+				"J",
+				"JavaScript"
+			],
+			[
+				"co",
+				"color"
+			],
+			[
+				"sc",
+				"src\tAttr"
+			],
+			[
+				"in",
+				"input"
+			],
+			[
+				"ta",
+				"target\tAttr"
+			],
+			[
+				"a",
+				"align\tAttr"
+			],
+			[
+				"mar",
+				"margin-top"
+			],
+			[
+				"email",
+				"emailresult"
+			],
+			[
+				"gen",
+				"gender"
+			],
+			[
+				"userid",
+				"useridtrans"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 87.0,
+		"last_filter": "Package Control: insta",
+		"selected_items":
+		[
+			[
+				"Package Control: insta",
+				"Package Control: Install Package"
+			],
+			[
+				"disa",
+				"Package Control: Disable Package"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"yap",
+				"Set Syntax: Python"
+			],
+			[
+				"pyt",
+				"Package Control: Add Repository"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"pytho",
+				"Set Syntax: Python"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 485.0
+	},
+	"console":
+	{
+		"height": 126.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = 'df21e130d211cfc94d9b0905775a7c0f' + '1e3d39e33b79698005270310898eea76'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)",
+			"import urllib.request,os,hashlib; h = 'eb2297e1a458f27d836c04bb0cbaf282' + 'd0e7a3098092775ccb37ca9d6b2e4b7d'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)",
+			"ignore_vcs_packages",
+			"import urllib.request,os,hashlib; h = 'df21e130d211cfc94d9b0905775a7c0f' + '1e3d39e33b79698005270310898eea76'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)",
+			"import  urllib.request,os;pf='Package Control.sublime-package';ipp=sublime.installed_packages_path();urllib.request.install_opener(urllib.request.build_opener(urllib.request.ProxyHandler()));open(os.path.join(ipp,pf),'wb').write(urllib.request.urlopen('http://sublime.wbond.net/'+pf.replace(' ','%20')).read())",
+			"import urllib.request,os; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); open(os.path.join(ipp, pf), 'wb').write(urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ','%20')).read())"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/mac/Desktop/Practise of HTML5/webApp阅读器Demo-慕课网/css/reset.css",
+		"/Users/mac/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/Users/mac/Library/Application Support/Sublime Text 3/Packages/Default/Preferences.sublime-settings",
+		"/Users/mac/Desktop/border制作一个三角形，然后设置在右上角？/plus.html",
+		"/Users/mac/Desktop/border制作一个三角形，然后设置在右上角？/icon.html",
+		"/Users/mac/Desktop/border制作一个三角形，然后设置在右上角？/zhengti-by-me.html",
+		"/Users/mac/Desktop/border制作一个三角形，然后设置在右上角？/absolute.css",
+		"/Users/mac/Desktop/border制作一个三角形，然后设置在右上角？/zhengti.html",
+		"/Users/mac/Desktop/border制作一个三角形，然后设置在右上角？/login-by-me.html",
+		"/Users/mac/Desktop/border制作一个三角形，然后设置在右上角？/login.html",
+		"/Users/mac/Desktop/Practise of HTML5/test.html",
+		"/Users/mac/Desktop/border制作一个三角形，然后设置在右上角？/login-by-me",
+		"/Users/mac/Desktop/Practise of HTML5/task8.html",
+		"/Users/mac/Desktop/Practise of HTML5/style8reset.css",
+		"/Users/mac/Desktop/Practise of HTML5/style8main.css",
+		"/Users/mac/Desktop/Practise of HTML5/rect/index.html",
+		"/Users/mac/Desktop/Practise of HTML5/rect/style.css",
+		"/Users/mac/Desktop/Practise of HTML5/rect/app1.js",
+		"/private/var/folders/n2/dv86wsfs7574jwmfpxbmmgbh0000gn/T/com.ujweng.unrarsharpmac/com.ujweng.unrarsharpmac/C3232C3E-A1D5-46F5-81D7-D35F1CD1CED9/（中文版）通往奴役之路——殷海光译bzlong.com.txt",
+		"/Users/mac/Desktop/Practise of HTML5/SpaceShuttle/index.html",
+		"/Users/mac/Desktop/Practise of HTML5/SpaceShuttle/style.css",
+		"/Users/mac/Desktop/Practise of HTML5/SpaceShuttle/airship.js",
+		"/Users/mac/Desktop/Practise of HTML5/js/task7.js",
+		"/Users/mac/Desktop/Practise of HTML5/style2.css",
+		"/Users/mac/Desktop/Practise of HTML5/form/style.css",
+		"/Users/mac/Desktop/Practise of HTML5/js/task10.js",
+		"/Users/mac/Desktop/Practise of HTML5/form/index.html",
+		"/Users/mac/Desktop/Practise of HTML5/js/task5.html",
+		"/Users/mac/Desktop/Practise of HTML5/js/task6.js",
+		"/Users/mac/Desktop/Practise of HTML5/form/app.js",
+		"/Users/mac/Desktop/Practise of HTML5/task6.html",
+		"/Users/mac/Desktop/Practise of HTML5/style5.css",
+		"/Users/mac/Desktop/Practise of HTML5/style6.css",
+		"/Users/mac/Desktop/Practise of HTML5/challenge1.html",
+		"/Users/mac/Desktop/Practise of HTML5/js/task6.html",
+		"/Users/mac/Desktop/Practise of HTML5/SpaceShuttle/app.js",
+		"/Users/mac/Desktop/Practise of HTML5/SpaceShuttle/jquery-1.12.1.min.js",
+		"/Users/mac/Desktop/NodejsDemo/hello.js",
+		"/Users/mac/Desktop/NodejsDemo/readme.txt",
+		"/README.md",
+		"/Users/mac/Desktop/Practise of HTML5/js/task11.js",
+		"/Users/mac/Desktop/Practise of HTML5/js/task11.html",
+		"/Users/mac/Desktop/Practise of HTML5/js/task10.html",
+		"/Users/mac/Desktop/Practise of HTML5/js/task7.html",
+		"/Users/mac/Desktop/Practise of HTML5/js/task8.html",
+		"/Users/mac/Desktop/Practise of HTML5/js/style7.css",
+		"/Users/mac/Desktop/Practise of HTML5/js/style6.css",
+		"/Users/mac/Desktop/Practise of HTML5/js/task4.js",
+		"/Users/mac/Desktop/Practise of HTML5/js/task4.html",
+		"/Users/mac/Desktop/Practise of HTML5/js/task6.css",
+		"/Users/mac/Desktop/Practise of HTML5/js/task2.html",
+		"/Users/mac/Desktop/Practise of HTML5/js/task5.js",
+		"/Users/mac/Desktop/Practise of HTML5/js/style5.css",
+		"/Users/mac/Desktop/Practise of HTML5/task6mk1.html",
+		"/Users/mac/Desktop/Practise of HTML5/style6mk1.css",
+		"/Users/mac/Desktop/Practise of HTML5/js/task3.html",
+		"/Users/mac/Desktop/Practise of HTML5/js/task1.html",
+		"/Users/mac/Desktop/Practise of HTML5/style4.css",
+		"/Users/mac/Desktop/Practise of HTML5/task5.html",
+		"/Users/mac/Desktop/Practise of HTML5/doc1.html",
+		"/Users/mac/Desktop/Practise of HTML5/style3.css",
+		"/Users/mac/Desktop/Practise of HTML5/style1.css",
+		"/Applications/XAMPP/xamppfiles/htdocs/learnjs/NewSite/style1-2.css",
+		"/Applications/XAMPP/xamppfiles/htdocs/learnjs/NewSite/style:task_1_02_1.css",
+		"/Users/mac/Desktop/Practise of HTML5/task3.html",
+		"/Users/mac/Desktop/Practise of HTML5/task4.html",
+		"/Users/mac/Desktop/Practise of HTML5/Blue-rule.png",
+		"/Users/mac/Desktop/Practise of HTML5/doc2.html",
+		"/Users/mac/lp/history.py",
+		"/Applications/XAMPP/xamppfiles/htdocs/learnjs/NewSite/indexByH.html",
+		"/Applications/XAMPP/xamppfiles/htdocs/learnjs/NewSite/index.html",
+		"/Applications/XAMPP/xamppfiles/htdocs/learnjs/obj.js",
+		"/Users/mac/Desktop/Practise of HTML5/ls4.css",
+		"/Users/mac/Desktop/Practise of HTML5/js1.js",
+		"/Users/mac/lp/charck.py",
+		"/Users/mac/lp/again.py",
+		"/Users/mac/lp/learn.py",
+		"/Users/mac/Desktop/lizzy'/lizzy2test.sql",
+		"/Users/mac/learnpython/fok.py",
+		"/Users/mac/Desktop/awesome_python_app/app.py",
+		"/Users/mac/learnpython/smtp.py",
+		"/Users/mac/Desktop/molihua.asm",
+		"/Volumes/老毛桃U盘/wyyj/music.ASM",
+		"/Users/mac/Desktop/xuehao.asm",
+		"/Volumes/NO NAME/微原可用.asm",
+		"/Volumes/老毛桃U盘/molihua.txt",
+		"/Volumes/老毛桃U盘/molihua.asm",
+		"/Volumes/老毛桃U盘/hongqi-wap/js/swiper.min.js",
+		"/Volumes/老毛桃U盘/hongqi-wap/js/shop.js",
+		"/Volumes/老毛桃U盘/hongqi-wap/js/js.js",
+		"/Volumes/老毛桃U盘/hongqi-wap/js/dealer.js",
+		"/Volumes/老毛桃U盘/hongqi-wap/js/base_market.js",
+		"/Volumes/老毛桃U盘/hongqi-wap/css/swiper.min.css",
+		"/Volumes/老毛桃U盘/hongqi-wap/css/scss.css",
+		"/Volumes/BOOTCAMP/代码.txt",
+		"/Applications/XAMPP/xamppfiles/htdocs/learnjs/NewSite/style.css",
+		"/Volumes/BOOTCAMP/weijiyuanli/xuehao.asm",
+		"/Volumes/BOOTCAMP/weijiyuanli/hello.asm",
+		"/Applications/XAMPP/xamppfiles/htdocs/learnjs/index.html",
+		"/Applications/XAMPP/xamppfiles/htdocs/learnjs/review.js",
+		"/Applications/XAMPP/xamppfiles/htdocs/learnjs/jQr.js",
+		"/Applications/XAMPP/xamppfiles/htdocs/learnjs/test.js",
+		"/Applications/XAMPP/xamppfiles/htdocs/learnjs/pic.js",
+		"/Applications/XAMPP/xamppfiles/htdocs/learnjs/iter.js",
+		"/Applications/XAMPP/xamppfiles/htdocs/learnjs/func.js",
+		"/Applications/XAMPP/xamppfiles/htdocs/learnjs/moe.html",
+		"/Applications/XAMPP/xamppfiles/htdocs/learnjs/first.js",
+		"/Applications/XAMPP/xamppfiles/htdocs/MyBlog/index.html",
+		"/Users/mac/learnpython/index.html",
+		"/Users/mac/learnpython/xc.py",
+		"/Users/mac/learnpython/gen.py",
+		"/Users/mac/learnpython/asy.py",
+		"/Users/mac/Desktop/感想",
+		"/Users/mac/learnpython/tm.py",
+		"/Users/mac/learnpython/autolog.py",
+		"/Users/mac/learnpython/url.py",
+		"/Users/mac/learnpython/sax.py",
+		"/Users/mac/Desktop/8086/E.ASM",
+		"/Users/mac/Desktop/汇编备份/E.ASM",
+		"/Users/mac/Desktop/8086/b.asm",
+		"/Users/mac/Desktop/微机原理实验/8086微机原理软件实验/b.asm",
+		"/Users/mac/Desktop/汇编备份/D.asm",
+		"/Users/mac/learnpython/app.py",
+		"/Users/mac/learnpython/hello.py",
+		"/Users/mac/Desktop/汇编备份/C.asm",
+		"/Users/mac/Desktop/汇编备份/b.asm",
+		"/Users/mac/Desktop/8086/C.asm",
+		"/Users/mac/Desktop/8086/D.asm"
+	],
+	"find":
+	{
+		"height": 27.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"font-size",
+			"操作失败",
+			"alert",
+			"#no_0",
+			"no_0",
+			"legend",
+			"clearInterval",
+			"padding",
+			"space-between",
+			"space-around",
+			"space-between",
+			"op",
+			"char_top",
+			"one",
+			".one",
+			"arges",
+			">",
+			"javascript",
+			"y1",
+			"chgn",
+			"ch'g'n",
+			"RET",
+			"toasc",
+			"compar",
+			"new",
+			"loop1",
+			"HEX",
+			"rank",
+			"scor",
+			"score",
+			"s",
+			"user"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 27.0
+	},
+	"input":
+	{
+		"height": 33.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "app_mobile.sublime-project",
+	"replace":
+	{
+		"height": 50.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"~/learnpython/socketOnTcp.py"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": false,
+	"side_bar_width": 150.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
