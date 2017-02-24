@@ -352,8 +352,22 @@
 				 	var prefix = "html5_reader_"; //加一个前缀，防止key val在全局作用域重叠
 				 	var storageGetter = function(key){return localStorage.getItem(prefix + key);};
 				 	var storageSetter = function(key,val){return localStorage.setItem(prefix + key, val);};
-				 	return {storageGetter:storageGetter,
-				 			storageSetter:storageSetter
+				 	var getJSONP = function(url,callback){
+				 		return $.jsonp({
+				 			url : url,
+				 			cache : true,
+				 			callback : "duokan_fiction_chapter",
+				 			success : function(result){
+				 				var data = $.base64.decode(result);
+				 				var json = decodeURIComponent(escape(data));
+				 				callback(data);
+				 			}
+				 		})
+				 	}
+				 	return {
+				 		getJSONP :getJSONP,
+				 		storageGetter:storageGetter,
+				 		storageSetter:storageSetter
 				 	};
 				 })();
 
@@ -400,15 +414,45 @@
 
 				 function main(){
 				 	//整个应用程序的入口函数
+				 	var readerModel = ReaderModel();
+				 	readerModel.init();
 				 	EventHandler();
 				 }
 
 				 function ReaderModel(){  
 				 	//实现和阅读器相关的数据交互的方法 ajax请求？
-				 }
+				 	var CHAPTER_ID;
+				 	var init = function(){
+				 		getFictionInfo(function(){
+				 			getCurChapterContent(CHAPTER_ID,function(){
+				 				//todo 
+				 			});
+				 		})
+				 	};
 
-				 function ReaderBaseFrame () {
-				 	// 渲染基本的UI结构 
+				 	var getFictionInfo = function(callback){
+				 		$.get("data/chapter.json",function(data){
+				 			//todo 获得章节信息之后的回调
+				 			CHAPTER_ID = data.chapters[1].chapter_id;
+				 			callback && callback();
+				 		},"json");
+				 	};
+
+				 	var getCurChapterContent = function(chapter_id,callback){
+				 		$.get("data/data" + chapter_id + ".json",function(data){
+				 			//服务器状态是否OK 约定0代表OK
+				 			if (data.result == 0) {
+				 				var url = data.jsonp;
+				 				Util.getJSONP(url,function (data) {
+				 					callback && callback(data);
+				 				});
+
+				 			}
+				 		},"json");
+				 	};
+				 	return {
+				 		init : init
+				 	};
 				 }
 
 				 function EventHandler(){
@@ -579,6 +623,12 @@
 				 // 		Util.storageSetter("background-color",initBackgroundColor);
 
 				 // 	})
+
+
+				 function ReaderBaseFrame () {
+				 	// 渲染基本的UI结构 
+				 }
+
 				  }
 
 				main();
