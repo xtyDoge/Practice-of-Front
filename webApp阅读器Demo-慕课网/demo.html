@@ -261,22 +261,7 @@
 
 			<div id="fiction_chapter_title"></div>
 			<div id="fiction_container" class="m-read-content">
-				<h4>Revolucionaria 汤武革命</h4>
-				<p>
-				   1965年4月23日，格瓦拉从坦桑尼亚穿越坦噶尼喀湖前往刚果。在之前他同卡斯特罗的一次秘密会谈中，格瓦拉说服了卡斯特罗支持这次行动。在最初他得到了当时刚果游击队领导人洛朗-德西雷·卡比拉（Laurent-Désiré Kabila）的协助，但不久格瓦拉拒绝了他的帮助，认为其是完全无意义的，并写到：“没有什么能让我相信他是一个现在的人”。格瓦拉向刚果起义军队传授游击战术，他的计划是利用刚果坦噶尼喀湖西岸的解放区作为基地，训练刚果及周边国家的革命武装。此时格瓦拉已经37岁，而且并没有受过正规军事训练的经验（他的哮喘使他免于在阿根廷服兵役），他的战斗经验大都来自古巴革命。
-				</p>
-				<p>
-					1964年12月，格瓦拉代表古巴出席联合国第19次大会，之后相继访问了阿尔及利亚、刚果(金)等8个非洲国家和中华人民共和国。当1965年3月14日回到古巴后，他与卡斯特罗在诸如对苏关系、援助第三世界革命等问题上的分歧日趋严重。
-				</p>
-				<p>
-					不久他辞去了自己的职务，4月1日他乘飞机离开了古巴，前往刚果（金）。在古巴担任高官期间，格瓦拉抵制官僚主义，生活节俭，并且拒绝给自己增加薪水。他从没上过夜总会，没有看过电影，也没去过海滩。一次在苏联一位官员家里做客时，当那位官员拿出极昂贵的瓷器餐具来招待格瓦拉时，格瓦拉对主人说：“真是讽刺，我这个土包子怎么配使用这么高级的餐具？”同时格瓦拉周末还积极参加义务劳动，比如在甘蔗地或工厂里劳动。
-				</p>
-				<p>
-					不久他辞去了自己的职务，4月1日他乘飞机离开了古巴，前往刚果（金）。在古巴担任高官期间，格瓦拉抵制官僚主义，生活节俭，并且拒绝给自己增加薪水。他从没上过夜总会，没有看过电影，也没去过海滩。一次在苏联一位官员家里做客时，当那位官员拿出极昂贵的瓷器餐具来招待格瓦拉时，格瓦拉对主人说：“真是讽刺，我这个土包子怎么配使用这么高级的餐具？”同时格瓦拉周末还积极参加义务劳动，比如在甘蔗地或工厂里劳动。
-				</p>
-				<p>
-					不久他辞去了自己的职务，4月1日他乘飞机离开了古巴，前往刚果（金）。在古巴担任高官期间，格瓦拉抵制官僚主义，生活节俭，并且拒绝给自己增加薪水。他从没上过夜总会，没有看过电影，也没去过海滩。一次在苏联一位官员家里做客时，当那位官员拿出极昂贵的瓷器餐具来招待格瓦拉时，格瓦拉对主人说：“真是讽刺，我这个土包子怎么配使用这么高级的餐具？”同时格瓦拉周末还积极参加义务劳动，比如在甘蔗地或工厂里劳动。
-				</p>
+				
 			</div>
 			<div class="m-button-bar">
 				<ul class="u-tab">
@@ -352,6 +337,7 @@
 				 	var prefix = "html5_reader_"; //加一个前缀，防止key val在全局作用域重叠
 				 	var storageGetter = function(key){return localStorage.getItem(prefix + key);};
 				 	var storageSetter = function(key,val){return localStorage.setItem(prefix + key, val);};
+				 	//如何解析JSONP 
 				 	var getJSONP = function(url,callback){
 				 		return $.jsonp({
 				 			url : url,
@@ -360,7 +346,7 @@
 				 			success : function(result){
 				 				var data = $.base64.decode(result);
 				 				var json = decodeURIComponent(escape(data));
-				 				callback(data);
+				 				callback(json);
 				 			}
 				 		})
 				 	}
@@ -384,7 +370,8 @@
 					bk_container : $(".bk-container"),
 					bk_container_current : $(".bk-container-current")
 				}
-
+				var readerModel;
+				var readerUI;
 				var fiction_container = $("#fiction_container");				
 				var DOC = $(document);
 				var WIN = $(window);
@@ -414,26 +401,57 @@
 
 				 function main(){
 				 	//整个应用程序的入口函数
-				 	var readerModel = ReaderModel();
-				 	readerModel.init();
+				 	readerModel = ReaderModel();
+				 	readerUI = ReaderBaseFrame(fiction_container);
+				 	readerModel.init(function(data){
+				 		readerUI(data);
+				 	});
 				 	EventHandler();
 				 }
+
+				//整个数据交互的逻辑可以这样描述：
+				//1.发送get请求 拿回一个json并解码得到章节信息,之后调用回调（封装为getFictionInfo方法）
+				//2.发送get请求 根据所拿到的章节信息请求例如chapter1.json 得到status和一个URL(封装为getCurChapterInfo) 然后调用回调 p.s.这个方法作为1的回调 getFictionInfo的一个参数
+				//3.发送jsonp请求（跨域了） 根据上一步得到的URL从服务器请求内容并解码 parse得到Object，再次调用回调
+				//4.将得到的Object拆解为章节、段落 渲染到DOM中 完成实时更新
+
+				//jQuery(zepto.js)ajax逻辑 即同域用$.get($.ajax) 跨域用JSONP ($.jsonp)
+				//具体代码风格如下 function xxx (XXcallback) {$.get(url,func(data){},json)}
+				//而第二个参数的参数data为get到的json的Object 在这个方法中可以对得到的data进行操作，而额外的操作可以在之后的callback && callback（）中
+
+				//最后进行方法调用时，子方法作为callback参数传入父方法 如
+				//getFictionInfo(function(chapter_id){getCurFiction(charpter_id);})
+
 
 				 function ReaderModel(){  
 				 	//实现和阅读器相关的数据交互的方法 ajax请求？
 				 	var CHAPTER_ID;
-				 	var init = function(){
+				 	var CHAPTER_TOTAL;
+				 	//先得到目录 再得到现在的章节内容
+				 	var init = function(UIcallback){
 				 		getFictionInfo(function(){
-				 			getCurChapterContent(CHAPTER_ID,function(){
+				 			getCurChapterContent(CHAPTER_ID,function(data){
 				 				//todo 
+				 				UIcallback && UIcallback(data);
 				 			});
 				 		})
 				 	};
 
+				 	//callback就是一个函数指针 参数引入 函数执行
 				 	var getFictionInfo = function(callback){
+				 		//$.get 是 $.ajax 的shortcut 
+				 		//ajax得到的data 其实是chapter.json经过parse的一个Object
 				 		$.get("data/chapter.json",function(data){
-				 			//todo 获得章节信息之后的回调
-				 			CHAPTER_ID = data.chapters[1].chapter_id;
+				 			//todo 获得章节信息之后 干什么
+				 			CHAPTER_TOTAL = data.chapters.length;
+				 			if (!Util.storageGetter("chapter_id")) {
+				 				CHAPTER_ID = data.chapters[1].chapter_id;
+				 				Util.storageSetter("chapter_id",CHAPTER_ID);
+				 			}
+				 			else {
+				 				CHAPTER_ID = Util.storageGetter("chapter_id");
+				 			}
+				 			//是否存在callback 存在则调用
 				 			callback && callback();
 				 		},"json");
 				 	};
@@ -450,10 +468,51 @@
 				 			}
 				 		},"json");
 				 	};
+
+				 	var prevChapter = function(UIcallback){
+				 		CHAPTER_ID = parseInt(CHAPTER_ID,10);
+				 		if (CHAPTER_ID == 0) {
+				 			return;
+				 		}
+				 		CHAPTER_ID = CHAPTER_ID - 1;
+				 		getCurChapterContent(CHAPTER_ID,UIcallback);
+				 		Util.storageSetter("chapter_id",CHAPTER_ID);
+				 	}
+
+				 	var nextChapter = function(UIcallback){
+				 		CHAPTER_ID = parseInt(CHAPTER_ID,10);
+				 		if (CHAPTER_ID == CHAPTER_TOTAL) {
+				 			return;
+				 		}
+				 		CHAPTER_ID = CHAPTER_ID + 1;
+				 		getCurChapterContent(CHAPTER_ID,UIcallback);
+				 		Util.storageSetter("chapter_id",CHAPTER_ID);
+				 	}
+
 				 	return {
-				 		init : init
+				 		init : init,
+				 		prevChapter : prevChapter,
+				 		nextChapter : nextChapter
+
 				 	};
 				 }
+
+				 function ReaderBaseFrame (container) {
+				 	// 渲染基本的UI结构 
+				 	function parseChapterData(jsonData){
+				 		var jsonobj =JSON.parse(jsonData);
+				 		var html = "<h4>" + jsonobj.t + "</h4>";
+				 		for (var i = 0;i < jsonobj.p.length;i++){
+				 			html += "<p>" + jsonobj.p[i] + "</p>";
+				 		}
+				 		return html;
+				 	}
+				 	return function(data){
+				 		container.html(parseChapterData(data));
+				 	}
+				 }
+
+				 
 
 				 function EventHandler(){
 				 	//交互的事件绑定
@@ -614,6 +673,23 @@
 				 		Util.storageSetter("time-mode",initTimeMode);
 				 	}
 
+				 	$("#prev_button").click(function(){
+				 		//获得章节的翻页数据并更新
+				 		readerModel.prevChapter(function(data){
+				 			readerUI(data);
+				 		});
+				 		WIN.scrollTop(0);
+
+				 	});
+
+				 	$("#next_button").click(function(){
+				 		readerModel.nextChapter(function(data){
+				 			readerUI(data);
+				 		});
+				 		WIN.scrollTop(0);
+
+				 	});
+
 				 //     只能通过点击夜间模式激活 黑色背景
 				 // 	$(".bk-container-black").click(function() { 
 				 // 		DOM.bk_container_current.hide();
@@ -625,12 +701,8 @@
 				 // 	})
 
 
-				 function ReaderBaseFrame () {
-				 	// 渲染基本的UI结构 
-				 }
-
-				  }
-
+				 
+				}
 				main();
 
 			})();
