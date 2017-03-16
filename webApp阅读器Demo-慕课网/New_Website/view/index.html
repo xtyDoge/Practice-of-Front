@@ -1,31 +1,43 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title>书城首页</title>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
-	<meta name="format-detection" content="telephone=no">
-	<link rel="stylesheet" type="text/css" href="/static/css/reset.css"/>
-	<link rel="stylesheet" type="text/css" href="/static/css/all.css"/>
+	<head>
+		<title>书城首页</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+		<meta name="format-detection" content="telephone=no">
+		<link rel="stylesheet" type="text/css" href="/static/css/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="/static/css/all.css"/>
 
-</head>
-
-<body>
-	<div id="root">
-		<% include include/header.html %>
-		<div>
-			<% include include/index-top.html %>
-			<% include include/index-hot.html %>
-			<% include include/index-recommend.html %>
-			<% include include/index-male.html %>
-			<% include include/index-female.html %>
-			<% include include/index-free.html %>
-			<% include include/index-bottom.html %>
+	</head>
+	<body>
+		<div id="app" :style="{
+			width:screen_width+'px'
+			}">
+			<% include include/header.html %>
+			<div :style="{
+    			transform: 'translate3d('+ position +'px,0px,0px)',
+   				transitionDuration: duration + 's',
+   				width:double_screen_width+'px'
+ 					 }">
+				<div class="container-wrap" style="float:left;" :style="{width:screen_width+'px',height:screen_height + 'px'}">
+					<div class="container-scroll" style="top:0px;" :style="{height:screen_height + 'px',width:screen_width+'px'}">
+						<% include include/index-top.html %>
+						<% include include/index-hot.html %>
+						<% include include/index-recommend.html %>
+						<% include include/index-male.html %>
+						<% include include/index-female.html %>
+						<% include include/index-free.html %>
+						<% include include/index-bottom.html %>
+					</div>
+				</div>
+				<div style="float:left;" :style="{width:screen_width+'px'}">
+					<% include include/index-shelf.html %>
+				</div>
+			</div>
 		</div>
-	</div>
-</body>
+	</body>
 
-<script type="text/javascript" src="/static/script/vue.js"></script>
-<script type="text/javascript" src="/static/script/zepto.js"></script>
-<script type="text/javascript" src="/static/script/pages/index.js"></script>
+	<script type="text/javascript" src="/static/script/vue.js"></script>
+	<script type="text/javascript" src="/static/script/zepto.js"></script>
+	<script type="text/javascript" src="/static/script/pages/index.js"></script>
 </html>
